@@ -4,13 +4,11 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "homepage": "https://lenafelica.github.io/tgbot-gpt-chat/",
+
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon ./src/main.js",
     "start": "cross-env NODE_ENV=production node ./src/main.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
+   },
   "keywords": [],
   "author": "",
   "license": "ISC",
