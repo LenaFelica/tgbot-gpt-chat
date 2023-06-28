@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  "homepage": "https://lenafelica.github.io/tgbot-gpt-chat/",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon ./src/main.js",
-    "start": "cross-env NODE_ENV=production node ./src/main.js"
+    "start": "cross-env NODE_ENV=production node ./src/main.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +23,7 @@
     "axios": "^1.4.0",
     "config": "^3.3.9",
     "fluent-ffmpeg": "^2.1.2",
+    "gh-pages": "^5.0.0",
     "openai": "^3.3.0",
     "telegraf": "^4.12.2"
   }
